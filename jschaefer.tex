@@ -1,0 +1,300 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.6.5, 3 Nov 2022) written by LianTze Lim (liantze@gmail.com), based on the
+% CV created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 package.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+% \colorlet{tagline}{PastelRed}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{pubs-num}
+
+%% publications.bib contains your publications
+%\addbibresource{publications.bib}
+
+\begin{document}
+\name{Jonas Schäfer}
+\tagline{Science enthusiast driven by impact \& the power of kindness}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+\photoR{2.5cm}{jonas+earthly.png}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{jonas.schaefer00@gmail.com}
+  \phone{+49 176 69616761}
+  % \mailaddress{}
+  \location{Wadgassen, Germany}
+  % \homepage{marissamayr.tumblr.com}
+  % \twitter{@jonas4climate}
+  \\
+  \linkedin{jonas-schaefer}
+  \github{jonas4climate} % I'm just making this up though.
+%   \orcid{0000-0000-0000-0000} % Obviously making this up too.
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+	%%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Climate Volunteering}
+
+\cvevent{Head of Human Resources | Full-Time}{\href{https://climatescience.org}{ClimateScience}}{Jun 2022 -- Ongoing}{Remote}
+\begin{itemize}
+    \item Created the entire HR department from scratch
+    \item Developed full HR strategy and built a team of 6 to implement it, introducing process management to optimize \& scale our work
+    \item Guiding organization's decision-making as part of executive coordination
+    \item Continue to support fundraising, finance, partnerships and PR work
+\end{itemize}
+
+\divider
+
+\cvevent{European Partnership Lead | Full-Time}{\href{https://climatescience.org}{ClimateScience}}{Dec 2021 -- Jun 2022}{Remote}
+\begin{itemize}
+    \item Established 2 gov. collaborations in Europe
+    \item Lead a team of 10 volunteers to recruit for and build over 35 national communities around the world within 3 months.
+\end{itemize}
+
+\divider
+
+\cvevent{Web Developer \& German Partnerships | Part-Time}{\href{https://climatescience.org}{ClimateScience}}{Dec 2019 --  Dec 2021}{Remote}
+\begin{itemize}
+    \item Helped code and bring our \hrefUI{https://climatescience.org}{Web app} to now  \textbf{over 8 million people}.
+    \item Acquired \textbf{over \$50,000 funding} for the organization and introduced the organisation's \textbf{first gov. partnership} in Europe.
+\end{itemize}
+
+% \cvsection{A Day of My Life}
+
+% % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% % \wheelchart{outer radius}{inner radius}{
+% % comma-separated list of value/text width/color/detail}
+% % Some ad-hoc tweaking to adjust the labels so that they don't overlap
+% \hspace*{-1em}  %% quick hack to move the wheelchart a bit left
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/13em/accent!30/Sleeping \& dreaming about work,
+%   25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%   5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%   20/11em/accent!40/Spending time with family,
+%   5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%   30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
+%   5/8em/accent!20/Baking cupcakes
+% }
+
+% use ONLY \newpage if you want to force a page break for
+% ONLY the currentc column
+
+\cvsection{Research Experience}
+
+\cvevent{Industry Summer Studentship}{\href{https://royalsociety.org/}{Royal Society} \& \href{https://www.birmingham.ac.uk}{University of Birmingham}}{Jul 2020 -- Sep 2020}{Remote}
+\begin{itemize}
+    \item Designed a \textbf{Deep Neural Network}-based system to monitor abnormal behaviour of captive animals via CCTV-applied \textbf{pose estimation}.
+    \item My research was praised by numerous academics and industry experts at The Royal Society Industry Fellows event.
+    \item Supervised by \hrefUI{https://www.jackiechappell.com/}{Dr. Jackie Chappell}, Senior Lecturer in Animal Behaviour \& Team Leader of the Cognitive Adaptations Research Group.
+\end{itemize}
+
+\cvsection{Conferences \& Speaking}
+\begin{itemize}
+    \item Invited to \textbf{represent Germany} at \href{https://coy17eg.com/}{COY17}, Egypt but unable to attend (Nov 2022)
+    \item Speaker: \textbf{European Parliament Youth Talk on Democracy and Climate Education} at \href{https://www.levelup22.eu}{Level Up! Conference} in Brussels. Find full speech \hrefUI{https://academy.europa.eu/courses/youth-talks-european-solidarity-corps-general-online-training/view/?fromPath=dashboard}{here} (Oct 2022)
+    \item \textbf{ClimateScience Delegate at COP26}, Glasgow (Nov 2021)
+\end{itemize}
+
+\newpage
+
+% \cvsection{Publications}
+
+% %% Specify your last name(s) and first name(s) as given in the .bib to automatically bold your own name in the publications list.
+% %% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
+% %% You can specify multiple names, especially if you have changed your name or if you need to highlight multiple authors.
+% \mynames{Lim/Lian\bibnamedelima Tze,
+%   Wong/Lian\bibnamedelima Tze,
+%   Lim/Tracy,
+%   Lim/L.\bibnamedelimi T.}
+% %% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
+
+% \nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{About me?}
+\begin{quote}
+``Hello I'm Jonas:)''
+\end{quote}
+
+\cvsection{Achievements}
+
+\cvachievement{\faTrophy}{1}{Reason}
+
+\divider
+
+\cvachievement{\faHeartbeat}{2}{Reason}
+
+\divider
+
+\cvachievement{\faChartLine}{3}{Reason}
+
+\divider
+
+\cvachievement{\faFemale}{4}{Reason}
+
+\cvsection{Strengths}
+
+\textbf{Soft skills}:\\
+\vspace{3mm}
+\cvtag{Leadership}
+\cvtag{Kindness}
+\cvtag{Collaboration}
+\cvtag{Enthusiasm}
+\cvtag{Trustworthiness}
+
+\divider\smallskip
+
+\textbf{Natural Sciences}:\\
+\vspace{3mm}
+\cvtag{Computer Science}
+\cvtag{Artificial Intelligence}
+\cvtag{Mathematics}
+\cvtag{Physics}
+
+\cvsection{Languages}
+
+\begin{itemize}
+    \item German - native
+    \item English - bilingual / C2
+    \item French - advanced / B1+
+\end{itemize}
+
+\cvsection{Education}
+
+% \cvevent{M.Sc. in Computational Science}{University of Amsterdam \& VU (joint)}{Sep 2021 -- Dec 2021}{}
+
+% \divider
+
+\cvevent{B.Sc. (Hons) in Computer Science}{University of Birmingham}{Sep 2018 -- Jun 2021}{}
+\begin{itemize}
+    \item \textbf{First Class} i.e. \textbf{4.0 GPA}
+    \item Focus areas: Machine Learning, Mathematical Modelling, Computer Vision \& Robotics
+\end{itemize}
+
+\cvsection{Certifications}
+\begin{itemize}
+    \item Beginner \& Advanced Track \hrefU{https://www.europeanhorizons.org/}{European Horizons} Fall Policy Workshop (Dec 2022)
+\end{itemize}
+
+\newpage
+
+% \cvsection{Referees}
+
+% % \cvref{name}{email}{mailing address}
+% \cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
+% {Address Line 1\\Address line 2}
+
+% \divider
+
+% \cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
+% {Address Line 1\\Address line 2}
+
+\end{paracol}
+
+\end{document}
