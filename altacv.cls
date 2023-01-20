@@ -299,7 +299,7 @@
 
 \newcommand{\cvhighlight}[3]{%
   \begin{tabularx}{\linewidth}{@{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}
-  \multirow{2}{*}{\Large\color{accent}#1} & \bfseries\textcolor{emphasis}{#2}\\
+  \multirow{2}{*}{\Large\color{logoAccent}#1} & \bfseries\textcolor{emphasis}{#2}\\
   & \small{#3}
   \end{tabularx}%
   \smallskip
