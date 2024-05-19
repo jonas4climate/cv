@@ -89,14 +89,18 @@
 \RequirePackage{xcolor}
 % TODO adjust color to university color scheme
 % \definecolor{accent}{HTML}{3A6FA2} % Colombia Climate School
-\colorlet{accent}{blue!70!black}
-\colorlet{emphasis}{black}
+% \colorlet{accent}{red}
 \colorlet{heading}{black}
 \colorlet{headingrule}{black}
-\colorlet{subheading}{emphasis}
 \colorlet{body}{black!80!white}
-\colorlet{name}{heading}
-\colorlet{tagline}{accent}
+
+% My colors
+\colorlet{tagline}{black}
+\colorlet{name}{black}
+\definecolor{section_sustainable}{HTML}{466545}
+\definecolor{section_computational}{HTML}{003860}
+\definecolor{section}{HTML}{6d798e}
+
 \newcommand{\itemmarker}{{\small\textbullet}}
 \newcommand{\ratingmarker}{\faCircle}
 
@@ -272,11 +276,25 @@
 
 \renewenvironment{quote}{\color{accent}\itshape\large}{\par}
 
-\newcommand{\cvsection}[2][]{%
+\newcommand{\cvsectionsustainable}[2][]{%
   \nointerlineskip\bigskip%  %% bugfix in v1.6.2
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
-  {\color{heading}\cvsectionfont\MakeUppercase{#2}}\\[-1ex]%
-  {\color{headingrule}\rule{\linewidth}{2pt}\par}\medskip
+  {\color{section_sustainable}\cvsectionfont\MakeUppercase{\Large\faLeaf\LARGE#2}}\\[-1ex]%
+  {\color{section_sustainable}\rule{\linewidth}{2pt}\par}\medskip
+}
+
+\newcommand{\cvsectioncomputational}[2][]{%
+  \nointerlineskip\bigskip%  %% bugfix in v1.6.2
+  \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
+  {\color{section_computational}\cvsectionfont\MakeUppercase{\Large\faMicrochip\LARGE#2}}\\[-1ex]%
+  {\color{section_computational}\rule{\linewidth}{2pt}\par}\medskip
+}
+
+\newcommand{\cvsectionlanguages}[2][]{%
+  \nointerlineskip\bigskip%  %% bugfix in v1.6.2
+  \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
+  {\color{section}\cvsectionfont\MakeUppercase{\LARGE\faLanguage\LARGE#2}}\\[-1ex]%
+  {\color{section}\rule{\linewidth}{2pt}\par}\medskip
 }
 
 \newcommand{\cvsubsection}[1]{%
@@ -291,8 +309,7 @@
   \ifstrequal{#2}{}{}{
   \textbf{\color{accent}#2}\par
   \smallskip}
-  \ifstrequal{#3}{}{}{{\small\makebox[0.4\linewidth][l]{\faCalendar~#3}}}%
-  \ifstrequal{#4}{}{}{{\small\makebox[0.3\linewidth][l]{\faMapMarker~#4}}}
+  \ifstrequal{#3}{}{}{{\small\makebox[0.55\linewidth][l]{\faCalendar~#3}}}%
   \ifstrequal{#5}{}{}{{\small\makebox[0.4\linewidth][l]{\faClock~#5}}}\par
   \medskip\normalsize
 }
