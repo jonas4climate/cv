@@ -46,6 +46,7 @@
 \RequirePackage{ifxetex,ifluatex}
 \RequirePackage{scrlfile}
 \RequirePackage{xparse}
+\RequirePackage[absolute,overlay]{textpos}
 
 %% v1.1.5: added for convenience
 \newif\ifxetexorluatex
@@ -278,14 +279,14 @@
 
 \newcommand{\cvsectionsustainable}[2][]{%
   \nointerlineskip\bigskip%  %% bugfix in v1.6.2
-  \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
+  \ifstrequal{ #1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
   {\color{section_sustainable}\cvsectionfont\MakeUppercase{\Large\faLeaf\LARGE#2}}\\[-1ex]%
   {\color{section_sustainable}\rule{\linewidth}{2pt}\par}\medskip
 }
 
 \newcommand{\cvsectioncomputational}[2][]{%
   \nointerlineskip\bigskip%  %% bugfix in v1.6.2
-  \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
+  \ifstrequal{ #1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
   {\color{section_computational}\cvsectionfont\MakeUppercase{\Large\faMicrochip\LARGE#2}}\\[-1ex]%
   {\color{section_computational}\rule{\linewidth}{2pt}\par}\medskip
 }

@@ -17,15 +17,10 @@
 
 \documentclass[11pt,a4paper,ragged2e,withhyper]{altacv}
 
-%% AltaCV uses the fontawesome5 package.
-%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+%% AltaCV uses the fontawesome5 package. See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
 
-% Change the page layout if you need to
-\geometry{left=1.25cm,right=1.25cm,top=1.25cm,bottom=1.25cm,columnsep=1.2cm}
-
-% The paracol package lets you typeset columns of text in parallel
+\geometry{left=1.25cm,right=1.25cm,top=0.75cm,bottom=1.0cm,columnsep=1.2cm}
 \usepackage{paracol}
-
 
 % Change the font if you want to, depending on whether
 % you're using pdflatex or xelatex/lualatex
@@ -37,15 +32,11 @@
   \usepackage[default]{lato}
 \fi
 
-% Change the colours if you want to
 \definecolor{VividPurple}{HTML}{3E0097}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
-% \colorlet{name}{black}
-% \colorlet{tagline}{PastelRed}
 \colorlet{heading}{VividPurple}
 \colorlet{headingrule}{VividPurple}
-% \colorlet{subheading}{PastelRed}
 \colorlet{accent}{black}
 \colorlet{logoAccent}{SlateGrey}
 \colorlet{emphasis}{SlateGrey}
@@ -59,8 +50,8 @@
 
 % Change the bullets for itemize and rating marker
 % for \cvskill if you want to
-\renewcommand{\itemmarker}{{\small\textbullet}}
-\renewcommand{\ratingmarker}{\faCircle}
+% \renewcommand{\itemmarker}{{\small\textbullet}}
+% \renewcommand{\ratingmarker}{\faCircle}
 
 %% Use (and optionally edit if necessary) this .tex if you
 %% want to use an author-year reference style like APA(6)
@@ -77,13 +68,10 @@
 
 \begin{document}
 \name{Jonas Schäfer}
-\tagline{Science enthusiast \& generalist driven by sustainable impact}
+\tagline{Computational scientist driven by sustainable impact}
 % Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
-%% You can add multiple photos on the left or right
-\photoR{2.5cm}{images/jonas.jpeg}
-% \photoL{2cm}{Yacht_High,Suitcase_High}
+\photoR{3cm}{images/jonas.png}
 \personalinfo{%
-  % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
   \email{jonas.schaefer00@gmail.com}
   \phone{+31 6 1651 1643‬}
@@ -92,7 +80,6 @@
   \\[0.5em]
   \location{Germany / Netherlands}
   % \twitter{@jonas4climate}
-  % \\
   \linkedin{jonas-schaefer}
   \github{jonas4climate} % I'm just making this up though.
 %   \orcid{0000-0000-0000-0000} % Obviously making this up too.
@@ -126,192 +113,18 @@
 
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
+
+\begin{textblock*}{8cm}(15cm,29cm) % {block width} (coords) 
+   \emph{\small{Generated on \today}}
+\end{textblock*}
+
 \begin{paracol}{2}
 
-\cvsectionsustainable{Sustainability Work}
-
-\small{Since its inception in 2019, I have been instrumental in the growth of \hrefUI{https://climatescience.org}{\textbf{ClimateScience}} from a \textbf{small non-profit} to one of the \textbf{world's largest} climate change education organizations.}
-
-\vspace{-0.5em}
-\rule{\linewidth}{0.5pt}\par
-\medskip\medskip
-
-\cvevent{Sustainability Intern}{\href{https://prowin.net}{proWIN Winter GmbH}}{Mar -- Sep 2023}{}{Part-Time (20h/w)}
-\begin{itemize}
-    \item Consolidated the organization's sustainability report
-    \item Advised on climate \& sustainability policy (\hrefU{https://www.efrag.org/lab6}{ESRS}).
-\end{itemize}
-
-% \rule{\linewidth}{1pt}\par
-% \medskip
-
-% \small{Since its inception in 2019, I have been instrumental in the growth of \hrefUI{https://climatescience.org}{\textbf{ClimateScience}} from a \textbf{small non-profit} to one of the \textbf{world's largest} climate change education organizations.}\\
-
-\medskip\medskip
-
-\cvevent{Head of Human Resources (Volunteer)}{\href{https://climatescience.org}{ClimateScience}}{Jun 2022 -- Mar 2023}{}{Full-Time}
-\begin{itemize}
-    \item Created HR department, set up HR team and strategy
-    \item Initiated newsletters, recruiting pipelines, an outreach team, volunteer training programmes and assessment cycles for \textbf{500+ volunteers across 50 countries}.
-    \item Member of Executive Coordination
-\end{itemize}
-
-\medskip
-
-\cvevent{Web Developer \& EU Partnerships (Volunteer)}{\href{https://climatescience.org}{ClimateScience}}{Dec 2019 --  Jun 2022}{}{Part-Time (10h/w)}
-% \begin{itemize}
-%     \item Coded front-end web pages and the authentication module of our\\ \hrefUI{https://climatescience.org}{Web app} now serving over \textbf{100,000 registered users}.
-%     \item Acquired about \textbf{\$100,000 in funding} for the organization and introduced the organisation's \textbf{first regional government partnership} in Europe.
-%     \item Led a team of 10 volunteers to establish \textbf{over 35 new national climate education communities} within 3 months.
-% \end{itemize}
-
-\medskip
-
-\cvsectionsustainable{Climate Conferences}
-\begin{itemize}
-    \item Nov 2022: Nominated to \textbf{represent German's youth} at \hrefU{https://coy17eg.com/}{COY17}, Egypt.
-    \item Oct 2022: Speaker in \textbf{European Parliament} on Democracy and Climate at the \emph{Level Up!} conference, Brussels. View my speech \hrefUI{https://audiovisual.ec.europa.eu/en/video/I-235549?&lg=EN}{here}
-    \item Jun 2022: Representation of ClimateScience at \hrefU{https://unfccc.int/SB56}{SB56}, Bonn
-    \item Nov 2021: \textbf{Event coordination} for ClimateScience at \hrefU{https://unfccc.int/process-and-meetings/the-paris-agreement/the-glasgow-climate-pact-key-outcomes-from-cop26}{COP26}, Glasgow
-\end{itemize}
-
-\medskip
-
-\cvsectionsustainable{Climate Certifications}
-\begin{itemize}
-    \item Dec 2022: Beginner \& Advanced Track \hrefU{https://www.europeanhorizons.org/}{European} \hrefU{https://www.europeanhorizons.org/}{Horizons} Fall \textbf{Policy Workshop} on climate policy
-\end{itemize}
-
-\medskip
-
-\cvsectionlanguages{Languages}
-
-\begin{enumerate}
-    \item German (native)
-    \item English (bilingual, C2)
-    \item French (advanced, B1+)
-\end{enumerate}
-
-\newpage
-
-% \cvsection{Publications}
-
-% %% Specify your last name(s) and first name(s) as given in the .bib to automatically bold your own name in the publications list.
-% %% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
-% %% You can specify multiple names, especially if you have changed your name or if you need to highlight multiple authors.
-% \mynames{Lim/Lian\bibnamedelima Tze,
-%   Wong/Lian\bibnamedelima Tze,
-%   Lim/Tracy,
-%   Lim/L.\bibnamedelimi T.}
-% %% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
-
-% \nocite{*}
-
-% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-
-% \divider
-
-% \printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
-
-% \divider
-
-% \printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
-
-%% Switch to the right column. This will now automatically move to the second
-%% page if the content is too long.
+\input{column2}
 \switchcolumn
-
-% \cvsection{About me?}
-% \begin{quote}
-% ``Hello I'm Jonas:)''
-% \end{quote}
-
-
-
-% \divider
-
-% \faChartLine \faFemale
-
-% \cvsection{Strengths}
-
-% \textbf{General}:\\
-% \vspace{3mm}
-% \begin{small}
-%     \cvtag{Leadership}
-%     \cvtag{Project Management}
-%     \cvtag{Kindness}\\
-%     \cvtag{Collaboration}
-%     \cvtag{Optimism}
-%     \cvtag{Research}
-% \end{small}
-
-% \medskip\medskip
-
-% \textbf{Natural Sciences}:\\
-% \vspace{3mm}
-% \begin{small}
-%     \cvtag{Computer Science}
-%     \cvtag{Artificial Intelligence}
-%     \cvtag{Mathematics}
-%     \cvtag{Nuclear- \& Astrophysics}
-% \end{small}
-
-\cvsectioncomputational{Comp. Education}
-
-\cvevent{M.Sc. in Computational Science (joint)}{University of Amsterdam \& Vrije University}{Sep 2023 -- Jul 2025}{}{Full-Time}
-\begin{itemize}
-    \item Grade: \textbf{7.5 GPA (currently)}
-    \item \textbf{Focus areas}: scientific computing, complex  systems, computational biology, stochastic systems
-\end{itemize}
-
-\medskip
-
-\cvevent{B.Sc. (Hons) in Computer Science}{University of Birmingham}{Sep 2018 -- Jun 2021}{}{Full-Time}
-\begin{itemize}
-    \item Grade: \textbf{First Class}
-    \item \textbf{Focus areas}: Mathematical Modelling,  Machine Learning, Computer Vision \& Robotics
-    \item \textbf{Thesis: "Expanding Standardisation in Optical Music Recognition"}
-\end{itemize}
-
-\cvsectioncomputational{Comp. Research}
-
-\cvevent{Industry Summer Studentship}{\href{https://royalsociety.org/}{Royal Society} \& \href{https://www.birmingham.ac.uk}{University of Birmingham}}{Jul 2020 -- Sep 2020}{}{Full-Time}
-\begin{itemize}
-    \item Supervised by \hrefU{https://www.jackiechappell.com/}{Dr. Jackie Chappell}, Senior Lecturer in Animal Behaviour \& Team Leader of the Cognitive Adaptations Research Group.
-    \item Designed a \textbf{Deep Neural Network}-based system to monitor abnormal behaviour of captive animals via CCTV-applied \textbf{pose estimation}.
-\end{itemize}
-
-\cvsectioncomputational{Comp. Projects}
-
-\cvevent{Opinion formation as a complex system (Group)}{}{Jan - Feb 2024}{}{}
-\begin{itemize}
-    \item Complex system analysis of the opinion formation process in social structures, modelled using \hrefU{https://psycnet.apa.org/record/1982-01296-001}{social} \hrefU{https://psycnet.apa.org/record/1982-01296-001}{impact theory} on lattices and BA networks.
-    \item Results include analysis of critical temperature, self-organized criticality, unification processes etc.
-    \item Presentation and project code can be found   \hrefUI{https://github.com/jonas4climate/complex-systems-project}{here}.
-\end{itemize}
-
-\medskip
-
-\cvevent{Modelling natural processes (Group)}{}{Jan 2024}{}{}
-\begin{itemize}
-    \item Numerical solutions to equations of \textbf{waves},\\ \textbf{diffusion}, \textbf{reaction-diffusion} and \textbf{Laplace}
-    \item Modelling coral growth using \hrefU{https://www.sciencedirect.com/topics/mathematics/diffusion-limited-aggregation}{DLA}
-    \item Find visualizations and project code \hrefUI{https://github.com/jonas4climate/modelling-natural-processes}{here}
-\end{itemize}
-
-\newpage
-
-% \cvsection{Referees}
-
-% % \cvref{name}{email}{mailing address}
-% \cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
-% {Address Line 1\\Address line 2}
-
-% \divider
-
-% \cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
-% {Address Line 1\\Address line 2}
+\input{column1}
 
 \end{paracol}
+
 
 \end{document}
